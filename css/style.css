@@ -27,11 +27,11 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: #1d0e15;
+  background: #262426;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #ff5421;
+  background: #F8B011;
 }
 
 body {
@@ -52,15 +52,15 @@ section {
   display: inline-block;
   padding: 1rem 3rem;
   background: #F8B011;
-  color: #000;
+  color: #262426;
   cursor: pointer;
   border-radius: .5rem;
   font-size: 1.8rem;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .link-btn:hover {
-  background: #000;
+  background: #262426;
   color: #F8B011;
 }
 
@@ -120,11 +120,11 @@ section {
 .header .nav a {
   font-size: 2rem;
   margin-left: 2rem;
-  color: #fff;
+  color: #E6E6E6;
 }
 
 .header .nav a:hover {
-  color: #262426;
+  color: #A8A8A8;
 }
 
 .header #menu-btn {
@@ -170,24 +170,23 @@ section {
   padding-top: 130px;
 }
 
-.about span {
+.about h1 {
   font-size: 4rem;
   color: #F8B011;
+  padding-bottom: 25px;
 }
 
-.about h3 {
-  font-size: 2.7rem;
-  text-transform: capitalize;
-  color: #fff;
-  padding: 1rem 0;
-}
 
 .about p {
   font-size: 1.5rem;
-  line-height: 2;
+  line-height: 2.2;
   color: #fff;
 }
 
+.about p span {
+  color: #F8B011;
+  font-size: 2.1rem;
+}
 .about ul {
   list-style: none;
 }
@@ -195,8 +194,8 @@ section {
 .about ul li {
   padding-top: 1.5rem;
   font-size: 1.7rem;
-  text-transform: capitalize;
-  color: #fff;
+  text-transform: none;
+  color: #E6E6E6;
 }
 
 .about ul li i {
@@ -283,33 +282,6 @@ section {
 
 .pricing .box-container .box .list p i.fa-times {
   color: #fff;
-}
-
-.join {
-  background: url(../images/fundo2.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin-top: 25px;
-}
-
-.join span {
-  font-size: 2.5rem;
-  color: #ff5421;
-}
-
-.join h3 {
-  font-size: 2.7rem;
-  text-transform: capitalize;
-  color: #fff;
-  padding-top: 1rem;
-}
-
-.join p {
-  padding: 1rem 0;
-  font-size: 1.7rem;
-  line-height: 2;
-  color: #ccc;
 }
 
 .team {
