@@ -15,6 +15,15 @@
 
 }
 
+@keyframes shake {
+  0% {
+    transform: skewY(5deg);
+  }
+  100% {
+    transform: skewY(-8deg);
+  }
+}
+
 html {
   overflow-x: hidden;
   font-size: 62.5%;
@@ -224,8 +233,7 @@ section {
 	display: inline-block;
 	font-size: 14px;
 	padding: 17px 30px 16px;
-	color: #ffffff;
-	background: #f36100;
+	color: #111111;
 	line-height: normal;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -238,10 +246,6 @@ section {
 	transition: all 0.3s;
 }
 
-.primary-btn.btn-normal:hover {
-	background: #f36100;
-	border-color: #f36100;
-}
 
 .section-title {
 	margin-bottom: 45px;
@@ -278,7 +282,7 @@ section {
 
 .ps-item {
 	text-align: center;
-	padding: 40px 30px 52px;
+	padding: 40px 30px 32px;
 	border: 1px solid #464646;
 	-webkit-transform: skewY(-4deg);
 	-ms-transform: skewY(-4deg);
@@ -293,6 +297,10 @@ section {
 .ps-item:hover {
 	background: #ffffff;
 	border-color: #ffffff;
+}
+
+#planosemestral {
+  border: 2px groove #F8B011;
 }
 
 
@@ -311,6 +319,7 @@ section {
 
 .ps-item:hover .primary-btn.pricing-btn {
 	background: #F8B011;
+  color:#111111;
 }
 
 .ps-item:hover .thumb-icon {
@@ -320,7 +329,7 @@ section {
 
 .ps-item h3 {
 	font-size: 28px;
-	color: #F8B011;
+	color: #111111;
 	font-weight: 600;
 	margin-bottom: 16px;
 	-webkit-transform: skewY(4deg);
