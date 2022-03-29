@@ -15,15 +15,6 @@
 
 }
 
-@keyframes shake {
-  0% {
-    transform: skewY(5deg);
-  }
-  100% {
-    transform: skewY(-8deg);
-  }
-}
-
 html {
   overflow-x: hidden;
   font-size: 62.5%;
@@ -405,13 +396,19 @@ section {
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
+  gap: 6rem;
+  padding: 20px 150px;
+  width: 100%;
 }
 
 .team .box-container .box {
-  height: 50rem;
+  max-height: 50rem;
+  max-width: 500rem;
   overflow: hidden;
   position: relative;
+  border-radius: 10px 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 .team .box-container .box:hover .content {
@@ -427,6 +424,7 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px 10px;
 }
 
 .team .box-container .box .content {
