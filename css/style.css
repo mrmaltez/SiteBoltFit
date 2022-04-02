@@ -35,8 +35,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  /*background: url(../images/fundo1.png);*/
-  background-color: #262426;
+  background: url(../images/fundo1.png);
+  background-repeat: no-repeat ;
   background-size: cover;
   background-position: center;
 
@@ -160,7 +160,6 @@ section {
 }
 
 .inicio {
-
   margin-bottom: 100px;
 }
 
@@ -172,6 +171,8 @@ section {
   padding-top: 4rem;
   margin: 0;
   padding-top: 130px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about h1 {
@@ -212,7 +213,7 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-top: 25px;
+  margin-top: 15px;
   padding-top: 25px;
 
 
@@ -263,7 +264,7 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-top: 25px;
+  margin-top: 15px;
   padding-top: 25px;
 }
 
@@ -291,15 +292,18 @@ section {
 }
 
 #planosemestral {
-  border: 2px groove #F8B011;
+  border: 3px groove #F8B011;
 }
-
 
 .ps-item:hover h3 {
 	color: #111111;
 }
 
 .ps-item:hover .pi-price span {
+	color: #444444;
+}
+
+.ps-item:hover .pi-price h4 {
 	color: #444444;
 }
 
@@ -323,6 +327,7 @@ section {
 	color: #111111;
 	font-weight: 600;
 	margin-bottom: 16px;
+  text-transform: uppercase;
 	-webkit-transform: skewY(4deg);
 	-ms-transform: skewY(4deg);
 	transform: skewY(4deg);
@@ -337,6 +342,12 @@ section {
 
 .ps-item .pi-price h2 {
 	font-size: 40px;
+	color: #F8B011;
+	font-weight: 600;
+}
+
+.ps-item .pi-price h4 {
+	font-size: 30px;
 	color: #F8B011;
 	font-weight: 600;
 }
@@ -383,12 +394,14 @@ section {
 	visibility: hidden;
 }
 
+
+
 .team {
   background: url(../images/fundo2.png) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .team .box-container {
@@ -399,11 +412,12 @@ section {
   gap: 6rem;
   padding: 20px 150px;
   width: 100%;
+  justify-content: center;
 }
 
 .team .box-container .box {
   max-height: 50rem;
-  max-width: 500rem;
+  max-width: 50rem;
   overflow: hidden;
   position: relative;
   border-radius: 10px 10px;
@@ -559,6 +573,16 @@ section {
 }
 
 @media (max-width: 768px) {
+  
+  .home {
+    background: url(../images/bk3.png) no-repeat;
+    background-color: #262626;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10rem;
+    margin-bottom: -52px;
+  }
+  
   .header {
     padding: 2rem;
   }
@@ -594,11 +618,33 @@ section {
     color: #000;
     margin: 1rem 2rem;
   }
+
+  .col2 {
+    margin-top: -100px;
+    padding-bottom: 30px;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 414px) {
+  
+  .header.active {
+    background: url(../images/fundo2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0rem 0;
+  
+  }
+
+  .boxmap{
+    padding-bottom: 55px;
+    align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
