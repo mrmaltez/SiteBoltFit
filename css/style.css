@@ -149,15 +149,25 @@ section {
 
 .home span {
   font-size: 5rem;
-  color: #fff;
+  color: #F8B011;
+  text-shadow: black 0.1em 0.1em 0.5em
 }
 
+.home p {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.5em
+}
+
+
 .home h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #fff;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-shadow: black 0.1em 0.1em 0.5em
 }
+
 
 .inicio {
   margin-bottom: 100px;
@@ -208,6 +218,9 @@ section {
   color: #F8B011;
 }
 
+
+/* carrosel*/
+
 .fotos {
   background: url(../images/fundo2.png) no-repeat;
   background-size: cover;
@@ -215,8 +228,17 @@ section {
   background-attachment: fixed;
   margin-top: 15px;
   padding-top: 25px;
+}
 
-
+.imagens {
+  height: auto;
+  width: auto;
+  max-width: 550px;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
 }
 
 /*planos*/
@@ -394,8 +416,6 @@ section {
 	visibility: hidden;
 }
 
-
-
 .team {
   background: url(../images/fundo2.png) no-repeat;
   background-size: cover;
@@ -416,13 +436,14 @@ section {
 }
 
 .team .box-container .box {
-  max-height: 50rem;
+  max-height: 100%;
   max-width: 50rem;
   overflow: hidden;
   position: relative;
   border-radius: 10px 10px;
   text-align: center;
   justify-content: center;
+  margin: auto;
 }
 
 .team .box-container .box:hover .content {
@@ -438,14 +459,14 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px 10px;
+  border-radius: 10px;
 }
 
 .team .box-container .box .content {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #fff;
+  background: #444444;
   padding: 1rem 2rem;
 }
 
@@ -456,15 +477,16 @@ section {
 
 .team .box-container .box .content h3 {
   font-size: 2rem;
-  color: #000;
+  color: #fff;
 }
 
 .team .box-container .box .share {
   position: absolute;
   bottom: 0;
-  left: -100%;
-  background: #fff;
+  left: -700%;
+  background: #444444;
   padding: 1.5rem 1rem;
+  color: #fff;
 }
 
 .team .box-container .box .share a {
@@ -619,7 +641,7 @@ section {
     margin: 1rem 2rem;
   }
 
-  .col2 {
+  .video {
     margin-top: -100px;
     padding-bottom: 30px;
   }
